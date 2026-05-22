@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI故事视频提示生成器</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="page">
+    <header class="topbar">
+      <div class="logo">StoryPrompt AI</div>
+      <a class="nav-link" href="#generator">开始生成</a>
+    </header>
+
+    <section class="hero">
+      <p class="eyebrow">AI Production Engine for Story Shorts</p>
+      <h1>AI故事视频提示生成器</h1>
+      <p>
+        从一个想法开始，快速整理出适合短视频故事创作的提示词。
+      </p>
+
+      <div class="hero-actions">
+        <a class="primary-link" href="#generator">Start Creating</a>
+      </div>
+
+      <div class="workflow-preview" aria-label="创作流程预览">
+        <div class="workflow-card">
+          <span>01</span>
+          <strong>Idea</strong>
+        </div>
+        <div class="workflow-card">
+          <span>02</span>
+          <strong>Brief</strong>
+        </div>
+        <div class="workflow-card">
+          <span>03</span>
+          <strong>Storyboard</strong>
+        </div>
+        <div class="workflow-card">
+          <span>04</span>
+          <strong>Final Short</strong>
+        </div>
+      </div>
+    </section>
+
+    <section id="generator" class="generator">
+      <div class="section-heading">
+        <p>Prompt Studio</p>
+        <h2>生成你的故事视频提示词</h2>
+      </div>
+
+      <label for="topic">故事主题</label>
+      <input id="topic" type="text" placeholder="例如：一只会写诗的机器人">
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="platform">平台</label>
+          <select id="platform">
+            <option value="抖音">抖音</option>
+            <option value="小红书">小红书</option>
+            <option value="B站">B站</option>
+            <option value="YouTube Shorts">YouTube Shorts</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="duration">时长</label>
+          <select id="duration">
+            <option value="15秒">15秒</option>
+            <option value="30秒">30秒</option>
+            <option value="60秒">60秒</option>
+            <option value="3分钟">3分钟</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="style">风格</label>
+          <select id="style">
+            <option value="温暖治愈">温暖治愈</option>
+            <option value="悬疑反转">悬疑反转</option>
+            <option value="科幻冒险">科幻冒险</option>
+            <option value="幽默轻松">幽默轻松</option>
+          </select>
+        </div>
+      </div>
+
+      <button id="generateButton" class="primary-button" type="button">生成提示词</button>
+
+      <div id="result" class="result" aria-live="polite"></div>
+    </section>
+
+    <section class="cta">
+      <p>准备好开始创作了吗？</p>
+      <button class="cta-button" type="button">保存我的灵感</button>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
