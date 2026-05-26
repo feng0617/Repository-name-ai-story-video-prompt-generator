@@ -199,6 +199,32 @@ select:focus {
   border-radius: 6px;
 }
 
+.result-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+  white-space: normal;
+  border-style: solid;
+}
+
+.result-card {
+  padding: 16px;
+  background: #101823;
+  border: 1px solid #243244;
+  border-radius: 8px;
+}
+
+.result-card h3 {
+  margin: 0 0 10px;
+  color: #65f6d0;
+  font-size: 16px;
+}
+
+.result-card p {
+  margin: 0;
+  color: #dce8f5;
+}
+
 .cta {
   margin-top: 24px;
   text-align: center;
@@ -237,6 +263,10 @@ select:focus {
   }
 
   .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .result-grid {
     grid-template-columns: 1fr;
   }
 }
